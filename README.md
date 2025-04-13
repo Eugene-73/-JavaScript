@@ -84,4 +84,26 @@ console.log(primes)
 
 <hr />
 
+## **Задача 3** ##
+Написать функцию, которая возводит число в степень
 
+<details>
+<summary>Смотреть ответ</summary>
+Реализация
+1. Берем число
+2. Умножаем на себя p раз
+
+```javascript
+function pow(num,p) {
+   let answer;
+
+   answer = num;
+   for (let i=0; i< p-1; i++){
+   answer = answer * num;
+   }
+
+   return answer;
+}
+let val = pow(2,10)
+console.log(val)
+```
