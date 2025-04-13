@@ -48,13 +48,13 @@ FizzBuzz(a1);
 
 ## **Задача 2** ##
 У нас есть неизменяемая переменная n, у которой значение 100. 
-Найдите количество простых чисел от 0 до n
+Найдите количество простых чисел от 2 до n
 
 <details>
 <summary>Смотреть ответ</summary>
 
 Реализация
-1. Нужно пройти по каждому числу от 0 до n
+1. Нужно пройти по каждому числу от 2 до n
 2. Проверить, простое ли оно, если простое, прибавить 1
 ```javascript
 const n = 100;
@@ -68,13 +68,13 @@ function isPrime(val) {
 
 function countPrimes(n) {
    let counter = 0;
-   for (let i=2; i<=n; i++) {
+   for (let i=0; i<=n; i++) {
       if (isPrime(i)) counter++;
    }
    return counter;
 }
 
-const primes = countPrimes(12);
+const primes = countPrimes(100);
 console.log(primes)
 ```
    
