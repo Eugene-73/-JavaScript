@@ -68,7 +68,7 @@ function isPrime(val) {
 
 function countPrimes(n) {
    let counter = 0;
-   for (let i=0; i<=n; i++) {
+   for (let i=2; i<=n; i++) {
       if (isPrime(i)) counter++;
    }
    return counter;
@@ -79,8 +79,9 @@ console.log(primes)
 ```
    
 
-
+Ответ 25
 </details>
+
 <hr />
 
 
